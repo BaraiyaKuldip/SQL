@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Login Page
+    // Bootstrap CSS
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', rel='stylesheet')
+    style.
+      /* Custom CSS can be added here */
+      body {
+      background-color: #f8f9fa;
+      }
+      .login-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .login-form h2 {
+      margin-bottom: 30px;
+      text-align: center;
+      }
+      .login-form form {
+      margin-bottom: 15px;
+      }
+      .login-form form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      }
+      .login-form form button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      }
+      .login-form form button:hover {
+      background-color: #0056b3;
+      }
+  body
+    .container
+      .row
+        .col-md-6.col-sm-8.col-xs-12.mx-auto.mt-5
+          .login-form
+            h2 Login
+            form
+              .form-group
+                input.form-control(type='email', placeholder='Email', required='')
+              .form-group
+                input.form-control(type='password', placeholder='Password', required='')
+              button.btn.btn-primary(type='submit') Login
+    // Bootstrap JS (optional)
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
